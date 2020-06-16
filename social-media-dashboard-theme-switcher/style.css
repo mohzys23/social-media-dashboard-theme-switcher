@@ -1,0 +1,435 @@
+@media (max-width: 550px) {
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: black;
+    color: white;
+  }
+
+  .onoffswitch {
+    position: relative;
+    width: 50px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    margin-top: 3%;
+    margin-right: 8%;
+  }
+
+  .onoffswitch-checkbox {
+    display: none;
+  }
+
+  .onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    ;
+    border-radius: 25px;
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  }
+
+  .onoffswitch-inner {
+    display: block;
+    width: 100%;
+    margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s;
+    -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s;
+    transition: margin 0.3s ease-in 0s;
+  }
+
+  .onoffswitch-inner:before,
+  .onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 25px;
+    padding: 0;
+    line-height: 10px;
+    font-size: 14px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .onoffswitch-inner:before {
+    content: "";
+    padding-left: 10px;
+    background: hsl(230, 22%, 74%);
+    color: #000000;
+  }
+
+  .onoffswitch-inner:after {
+    content: "";
+    padding-right: 10px;
+    background: hsl(230, 22%, 74%);
+    color: #000000;
+    text-align: right;
+  }
+
+  .onoffswitch-switch {
+    display: block;
+    width: 19px;
+    height: 20px;
+    margin: 3px;
+    background: hsl(230, 17%, 14%);
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 25px;
+    -moz-transition: all 0.3s ease-in 0s;
+    -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
+  }
+
+  .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+  }
+
+  .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+    background-color: #FFFFFF;
+  }
+
+  #box1 {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(230, 17%, 14%);
+    border: 1px solid;
+  }
+
+  /* light mode styling */
+
+  #box1.light-mode .top-box {
+    background-color: hsl(225, 100%, 98%);
+  }
+
+
+  #box1.light-mode .top-box h1 {
+    color: hsl(230, 17%, 14%);
+  }
+
+  #box1.light-mode {
+    color: hsl(230, 17%, 14%);
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  #box1.light-mode .box-1, #box1.light-mode .box-2, #box1.light-mode .box-3, #box1.light-mode .box-4 {
+    background-color: hsl(225, 100%, 98%);
+  }
+
+  #box1.light-mode .box-5, #box1.light-mode .box-5-2, #box1.light-mode .box-6, #box1.light-mode .box-7, #box1.light-mode .box-8, #box1.light-mode .box-9, #box1.light-mode .box-10 {
+    background-color: hsl(225, 100%, 98%);
+  }
+
+  #box1.light-mode .attribution a {
+    color: hsl(230, 17%, 14%);
+  }
+
+  /* light mode style ends here */
+  .top-box {
+
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .top-box h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 8%;
+    margin-top: 0;
+    padding-top: 15%;
+    margin-bottom: 0;
+  }
+
+  .top-box h2 {
+    width: 84%;
+    margin-left: 8%;
+    font-size: 0.9rem;
+    color: hsl(228, 34%, 66%);
+    font-weight: 700;
+    margin-top: 2%;
+    padding-bottom: 7%;
+    border-bottom: 1px solid hsl(228, 34%, 66%);
+  }
+
+  .tog-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8%;
+  }
+
+  .top-box p {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: hsl(228, 34%, 66%);
+    margin-left: 8%;
+    margin-top: 4%;
+  }
+
+  .section-1 {
+    width: 100%;
+  }
+
+  .box-1 {
+    width: 84%;
+    margin-left: 8%;
+    background: hsl(228, 28%, 20%);
+    border-top: 4px solid hsl(208, 92%, 53%);
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+
+  .heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  .heading img {
+    width: 7%;
+    height: 20px;
+    border-radius: 2px;
+    margin-right: 3%;
+    margin-top: 1%;
+  }
+
+  .heading h1 {
+    margin-top: 2%;
+    font-size: 0.8rem;
+    color: hsl(228, 34%, 66%);
+  }
+
+  .box-1 h2, .box-2 h2, .box-3 h2, .box-4 h2 {
+    font-size: 4rem;
+    margin-top: 4%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .box-1 h3, .box-2 h3, .box-3 h3, .box-4 h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    color: hsl(228, 34%, 66%);
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .days {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+  }
+
+  .days img {
+    width: 2%;
+    height: 5px;
+    margin-top: 2%;
+  }
+
+  .days h4 {
+    font-size: 0.8rem;
+    margin-left: 2%;
+    margin-top: 0;
+    text-align: left;
+    font-weight: 400;
+    padding-bottom: 5%;
+  }
+
+  .box-2 {
+    width: 84%;
+    margin-left: 8%;
+    background: hsl(228, 28%, 20%);
+    border-top: 4px solid hsl(203, 89%, 53%);
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+
+  .box-3 {
+    width: 84%;
+    margin-left: 8%;
+    background: hsl(228, 28%, 20%);
+    border-top: 4px solid transparent;
+    border-image-slice: 5;
+    border-image-source: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+
+  .box-4 {
+    width: 84%;
+    margin-left: 8%;
+    background: hsl(228, 28%, 20%);
+    border-top: 4px solid hsl(348, 97%, 39%);
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+
+  .box-2 .days h4, .box-3 .days h4 {
+    color: hsl(163, 72%, 41%);
+  }
+
+  .box-4 .days h4 {
+    color: hsl(356, 69%, 56%);
+  }
+
+  .box-4 .days img {
+    color: inherit;
+  }
+
+  .heading2 {
+    width: 100%;
+  }
+
+  .heading2 h1 {
+    font-size: 1.5rem;
+    margin-left: 8%;
+    padding-top: 4%;
+  }
+
+  .section-2 {
+    width: 100%;
+  }
+
+  .box-5, .box-5-2, .box-6, .box-7, .box-8, .box-9, .box-10, .box-11 {
+    width: 84%;
+    margin-left: 8%;
+    background: hsl(228, 28%, 20%);
+    border-radius: 5px;
+    margin-bottom: 5%;
+  }
+
+  .heading3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .heading3 h5 {
+    color: hsl(228, 34%, 66%);
+    margin-left: 10%;
+  }
+
+  .heading3 img {
+    width: 7%;
+    height: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10%;
+  }
+
+  .sub {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sub h6 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-left: 10%;
+    margin-bottom: 0;
+  }
+
+  .sub-section {
+    width: 100%;
+    display: flex;
+    margin-left: 60%;
+    margin-bottom: 5%;
+    margin-top: 4%;
+  }
+
+  .box-6 .sub-section {
+    width: 100%;
+    display: flex;
+    margin-left: 40%;
+    margin-bottom: 5%;
+    margin-top: 4%;
+  }
+
+  .box-7 .sub-section {
+    width: 100%;
+    display: flex;
+    margin-left: 45%;
+    margin-bottom: 5%;
+    margin-top: 4%;
+  }
+
+  .box-8 .sub-section {
+    width: 100%;
+    display: flex;
+    margin-left: 50%;
+    margin-bottom: 5%;
+    margin-top: 4%;
+  }
+
+  .box-9 .sub-section {
+    width: 100%;
+    display: flex;
+    margin-left: 50%;
+    margin-bottom: 5%;
+    margin-top: 4%;
+  }
+
+  .box-10 .sub-section {
+    width: 100%;
+    display: flex;
+    margin-left: 45%;
+    margin-bottom: 5%;
+    margin-top: 4%;
+  }
+
+  .sub-section img {
+    width: 10%;
+    height: 7px;
+    margin-right: 10%;
+    margin-top: 3%;
+  }
+
+  .sub-section p {
+    width: 5%;
+    font-size: 0.8rem;
+    color: hsl(163, 72%, 41%);
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  .box-9 .sub-section p, .box-5-2 .sub-section p, .box-10 .sub-section p {
+    color: hsl(356, 69%, 56%);
+  }
+
+  .attribution {
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 0.8rem;
+  }
+
+  .attribution p {
+    width: 70%;
+    margin-left: 15%;
+    padding: 2%;
+  }
+
+  .attribution a {
+    color: white;
+    text-decoration: none;
+  }
+}
