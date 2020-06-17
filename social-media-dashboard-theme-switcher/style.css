@@ -528,6 +528,11 @@
   #box1.light-mode .top-box, #box1.light-mode .box-1, #box1.light-mode .box-2, #box1.light-mode .box-3, #box1.light-mode .box-4, #box1.light-mode .box-5, #box1.light-mode .box-5-2, #box1.light-mode .box-6, #box1.light-mode .box-7, #box1.light-mode .box-8, #box1.light-mode .box-9, #box1.light-mode .box-10, #box1.light-mode .box-11 {
     background-color: hsl(225, 100%, 98%);
   }
+  
+  #box1.light-mode .box-1:hover, #box1.light-mode .box-2:hover, #box1.light-mode .box-3:hover, #box1.light-mode .box-4:hover, #box1.light-mode .box-5:hover, #box1.light-mode .box-5-2:hover, #box1.light-mode .box-6:hover, #box1.light-mode .box-7:hover, #box1.light-mode .box-8:hover, #box1.light-mode .box-9:hover, #box1.light-mode .box-10:hover, #box1.light-mode .box-11:hover {
+    background-color: hsl(225, 100%, 96%);
+    cursor: pointer;
+  }
 
   #box1.light-mode .attribution a {
     color: hsl(230, 17%, 14%);
@@ -588,6 +593,11 @@
     display: flex;
     margin-bottom: 1%;
     margin-top: 2%;
+  }
+  
+  .box-1:hover, .box-2:hover, .box-3:hover, .box-4:hover, .box-5:hover, .box-5-2:hover, .box-6:hover, .box-7:hover, .box-8:hover, .box-9:hover, .box-10:hover, .box-11:hover {
+    background: hsl(228, 28%, 30%);
+    cursor: pointer;
   }
 
   .box-1 {
